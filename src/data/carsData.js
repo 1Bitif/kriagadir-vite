@@ -3,7 +3,7 @@ export const vehicles = [
     { 
       id: 1, 
       name: 'Lamborghini Urus', 
-      image: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?w=500&h=300&fit=crop', 
+      image: 'https://www.rentalmoroccocars.com/assets/dacia-logan-B6l6rGgb.png', 
       price: 2000, 
       priceText: '2000€/day', 
       type: 'Luxury', 
@@ -15,7 +15,7 @@ export const vehicles = [
     { 
       id: 2, 
       name: 'Porsche 911 Turbo S', 
-      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&h=300&fit=crop', 
+      image: 'https://iogrcclxylgxxyckwcjb.supabase.co/storage/v1/object/public/deep-luxe-showroom/ya53vaua1dky83coxjnlzm.png', 
       price: 1500, 
       priceText: '1500€/day', 
       type: 'Sport', 
