@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { whatsappNumber } from '../data/carsData';
-import MoroccoMap from './MoroccoMap.jsx';
+import MoroccoMap from './MoroccoMap';
 
 function Hero() {
+  const { t } = useLanguage();
   const [selectedCity, setSelectedCity] = useState('Marrakech');
   const [selectedDuration, setSelectedDuration] = useState('3-7 jours');
 
-  const cities = ['Tanger', 'Rabat', 'Casablanca', 'Marrakech', 'Agadir'];
+  const cities = [t('tangier'), t('rabat'), t('casablanca'), t('marrakech'), t('agadir')];
   const durations = ['3-7 jours', '8-14 jours', '15+ jours'];
 
   const handleReservation = () => {
@@ -18,16 +20,12 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-overlay"></div>
       <div className="container hero-container">
-        {/* LEFT SIDE - Booking Form */}
         <div className="hero-left">
-          <h1>Votre Voiture <span className="highlight">Confirmée</span><br />en 5 minutes</h1>
-          <p className="hero-subtitle">
-            Choisissez votre ville et la durée. Confirmation immédiate via WhatsApp.
-          </p>
+          <h1>{t('confirmed')} <span className="highlight">{t('in5min')}</span></h1>
+          <p className="hero-subtitle">{t('chooseCity')}</p>
 
-          {/* City Selection */}
           <div className="form-group">
-            <label>📍 Où souhaitez-vous récupérer la voiture ?</label>
+            <label>{t('wherePickup')}</label>
             <select 
               className="city-select"
               value={selectedCity}
@@ -39,9 +37,8 @@ function Hero() {
             </select>
           </div>
 
-          {/* Duration Selection */}
           <div className="form-group">
-            <label>⏱️ Combien de temps ?</label>
+            <label>{t('howLong')}</label>
             <div className="duration-options">
               {durations.map(duration => (
                 <button
@@ -55,20 +52,16 @@ function Hero() {
             </div>
           </div>
 
-          {/* WhatsApp Button */}
           <button className="whatsapp-reserve-btn" onClick={handleReservation}>
-            📱 Réserver sur WhatsApp
+            {t('reserveNow')}
           </button>
 
-          {/* Features */}
           <div className="features-list">
-            <span>✅ Livraison gratuite à Marrakech</span>
-            <span>🔒 Conditions claires • Caution restituée</span>
-            <span>💳 Option sans caution</span>
+            <span>{t('freeDeliveryMarrakech')}</span>
+            <span>{t('clearConditions')}</span>
+            <span>{t('noDeposit')}</span>
           </div>
         </div>
-
-        {/* RIGHT SIDE - Morocco Map with Cities */}
 
         <div className="hero-right">
           <MoroccoMap />

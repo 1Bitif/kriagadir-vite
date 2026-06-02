@@ -3,7 +3,7 @@ import { vehicles, whatsappNumber, phoneNumber } from '../data/carsData';
 
 function FleetSection({ setSelectedCar, setShowModal }) {
   const handleWhatsApp = (car) => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Bonjour! Je souhaite louer ${car.name}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}?text=Bonjour! Je souhaite louer ${car.name} (${car.priceText})`, '_blank');
   };
 
   const handleCallNow = () => {
@@ -15,7 +15,7 @@ function FleetSection({ setSelectedCar, setShowModal }) {
       <div className="container">
         <h2>Notre Flotte de <span className="highlight">Véhicules de Luxe</span></h2>
         <div className="car-grid">
-          {vehicles.map(car => (
+          {vehicles.slice(0, 6).map(car => (
             <div key={car.id} className="car-card">
               <div className="car-type-badge">{car.type}</div>
               <img src={car.image} alt={car.name} />
