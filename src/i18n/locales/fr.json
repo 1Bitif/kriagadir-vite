@@ -1,0 +1,38 @@
+{
+  "home": "Accueil",
+  "vehicles": "Véhicules",
+  "ourCars": "Nos Voitures",
+  "contact": "Contact",
+  "confirmed": "Confirmé",
+  "in5min": "en 5min",
+  "chooseCity": "Choisissez votre ville de départ",
+  "wherePickup": "Où récupérer votre voiture ?",
+  "howLong": "Durée de location",
+  "reserveNow": "Réserver sur WhatsApp",
+  "freeDelivery": "🚗 Livraison gratuite à Marrakech",
+  "clearConditions": "✅ Conditions claires",
+  "noDeposit": "💳 Sans dépôt",
+  "whatsappMessage": "Bonjour KriAgadir! 👋\n\nJe souhaite récupérer ma voiture à: {{city}}\nDurée: {{duration}} jours\n\nMerci de me contacter.",
+  "cities": {
+    "tangier": "Tanger",
+    "rabat": "Rabat",
+    "casablanca": "Casablanca",
+    "marrakech": "Marrakech",
+    "agadir": "Agadir"
+  },
+  "durations": {
+    "3-7": "3-7 jours",
+    "8-14": "8-14 jours",
+    "15+": "15+ jours"
+  },
+   "heroTitle": "La voiture vous\nattend",
+  "moreInfo": "Plus d'informations",
+  "shortTerm": "Location courte durée",
+  "longTerm": "Location longue durée",
+  "exclusive": "Transport exclusif",
+  "yourDestination": "Votre destination",
+  "pickupDate": "Date de prise en charge",
+  "dropoffDate": "Date de retour",
+  "findCar": "Trouver une voiture",
+  "cityNotSelected": "Non spécifié"
+}
