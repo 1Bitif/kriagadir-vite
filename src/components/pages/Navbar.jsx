@@ -195,7 +195,7 @@ function Navbar() {
             onClick={() => scrollTo('home')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white font-bold italic text-2xl tracking-tight select-none hover:opacity-90 transition-opacity bg-transparent border-none cursor-pointer drop-shadow-lg"
+            className={`${scrolled ? "text-orange-500" : "text-white"} font-bold italic text-2xl tracking-tight select-none hover:opacity-90 transition-opacity bg-transparent border-none cursor-pointer drop-shadow-lg`}
           >
             kriagadir
           </motion.button>
@@ -213,7 +213,7 @@ function Navbar() {
                   setDesktopDropdownOpen(false);
                   setLangDropdownOpen(false);
                 }}
-                className="text-white/75 hover:text-white p-2.5 rounded-full hover:bg-white/10 transition-all"
+                className={`${scrolled ? "text-black/70 hover:text-black" : "text-white/75 hover:text-white"}  p-2.5 rounded-full hover:bg-white/10 transition-all`}
               >
                 <Search className="w-[18px] h-[18px]" />
               </motion.button>
@@ -230,7 +230,7 @@ function Navbar() {
                   setDesktopDropdownOpen(false);
                   setSearchOpen(false);
                 }}
-                className="flex items-center gap-1 text-white/75 hover:text-white p-2.5 rounded-full hover:bg-white/10 transition-all text-sm"
+                className={`flex items-center gap-1 ${scrolled ? "text-black/70 hover:text-black" : "text-white/75 hover:text-white"}   p-2.5 rounded-full hover:bg-white/10 transition-all text-sm`}
               >
                 <span className="text-base">{currentLang?.flag}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${langDropdownOpen ? 'rotate-180' : ''}`} />
@@ -277,7 +277,7 @@ function Navbar() {
                   setSearchOpen(false);
                   setLangDropdownOpen(false);
                 }}
-                className="flex items-center gap-1 text-white/75 hover:text-white p-2.5 rounded-full hover:bg-white/10 transition-all"
+                className={`flex items-center gap-1 ${scrolled ? "text-black/70 hover:text-black" : "text-white/75 hover:text-white"}   p-2.5 rounded-full hover:bg-white/10 transition-all`}
               >
                 <Menu className="w-[18px] h-[18px]" />
               </motion.button>
