@@ -1,38 +1,27 @@
 {
   "home": "الرئيسية",
-  "vehicles": "السيارات",
+  "vehicles": "المركبات",
   "ourCars": "سياراتنا",
   "contact": "اتصل بنا",
-  "confirmed": "مؤكد",
-  "in5min": "في 5 دقائق",
-  "chooseCity": "اختر مدينة الاستلام",
-  "wherePickup": "أين تريد استلام السيارة؟",
-  "howLong": "مدة الإيجار",
-  "reserveNow": "احجز عبر واتساب",
-  "freeDelivery": "🚗 توصيل مجاني في مراكش",
-  "clearConditions": "✅ شروط واضحة",
-  "noDeposit": "💳 بدون وديعة",
-  "whatsappMessage": "مرحباً KriAgadir! 👋\n\nأريد استلام السيارة في: {{city}}\nالمدة: {{duration}} أيام\n\nشكراً.",
-  "cities": {
-    "tangier": "طنجة",
-    "rabat": "الرباط",
-    "casablanca": "الدار البيضاء",
-    "marrakech": "مراكش",
-    "agadir": "أكادير"
-  },
-  "durations": {
-    "3-7": "3-7 أيام",
-    "8-14": "8-14 يوم",
-    "15+": "15+ يوم"
-  },
-  "heroTitle": "السيارة في انتظارك",
+  "shortTerm": "إيجار قصير",
+  "longTerm": "إيجار طويل",
+  "exclusive": "حصرية",
+  "heroTitle": "قد الأفضل،\nاستكشف المغرب",
+  "heroSubtitle": "تأجير سيارات فاخرة في الدار البيضاء، مراكش، طنجة والمزيد. شروط مرنة، أفضل الأسعار.",
   "moreInfo": "مزيد من المعلومات",
-  "shortTerm": "إيجار قصير المدى",
-  "longTerm": "إيجار طويل المدى",
-  "exclusive": "نقل حصري",
+  "findCar": "ابحث عن سيارة",
   "yourDestination": "وجهتك",
   "pickupDate": "تاريخ الاستلام",
   "dropoffDate": "تاريخ الإرجاع",
-  "findCar": "ابحث عن سيارة",
-  "cityNotSelected": "غير محدد"
+  "search": "ابحث عن سيارة...",
+  "cityNotSelected": "غير محدد",
+  "whatsappMessage": "مرحباً، أرغب في استئجار سيارة في {{city}} من {{duration}}. شكراً.",
+  "cities": {
+    "casablanca": "الدار البيضاء",
+    "marrakech": "مراكش",
+    "tangier": "طنجة",
+    "rabat": "الرباط",
+    "agadir": "أكادير",
+    "fes": "فاس"
+  }
 }
